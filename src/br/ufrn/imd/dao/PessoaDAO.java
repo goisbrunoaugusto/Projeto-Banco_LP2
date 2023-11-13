@@ -27,7 +27,7 @@ public class PessoaDAO {
         for(int i = 0; i < this.pessoa.size() ; i++) {
              tributoTotal += (pessoa.get(i).getImpostoTotal()) + (pessoa.get(i).getConta().getImpostoTotal()) +
                     taxaSeguroVida;
-        return "Imposto da pessoa " +pessoa.get(i) +" é: " + tributoTotal;
+            System.out.println("Imposto da pessoa " +pessoa.get(i) +" é: " + tributoTotal);
         }
         return "========================================================\n";
     }
