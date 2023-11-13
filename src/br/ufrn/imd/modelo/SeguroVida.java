@@ -33,4 +33,14 @@ public class SeguroVida {
     public void setValor(double valor) {
         this.valor = (valor - impostoSeguro);
     }
+
+    @Override
+    public String toString() {
+        return "SeguroVida{" +
+                "numero=" + numero +
+                ", beneficiado='" + beneficiado + '\'' +
+                ", valor=" + valor +
+                ", impostoSeguro=" + impostoSeguro +
+                '}';
+    }
 }

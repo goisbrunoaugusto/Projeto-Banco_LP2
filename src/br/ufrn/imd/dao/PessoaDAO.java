@@ -7,8 +7,12 @@ public class PessoaDAO {
     private ArrayList<Pessoa> pessoa;
     double taxaSalario = 0.11, taxaCC = 0.038, taxaSeguroVida = 31.50, impostoTotal;
 
+    public PessoaDAO() {
+        this.pessoa = new ArrayList<>();
+    }
+
     public void cadastraPessoa(Pessoa novaPessoa){
-        pessoa.add(novaPessoa);
+        this.pessoa.add(novaPessoa);
     }
     public void removerPessoa(Pessoa pessoaExcluir){
         pessoa.remove(pessoaExcluir);

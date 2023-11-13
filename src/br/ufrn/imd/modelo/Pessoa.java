@@ -50,6 +50,8 @@ public class Pessoa {
                 ", salario=" + salario +
                 ", conta=" + conta +
                 ", seguro=" + seguro +
-                '}';
+                '}' +
+                "\n ======================================================== \n";
+
     }
 }
